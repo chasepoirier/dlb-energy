@@ -1282,8 +1282,9 @@ a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     margin-top: 40px;
+    height:  auto;
 }
 
 .partners-page .flex-container .resource {
@@ -1295,7 +1296,25 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*height: 100%;*/
     transition: all .2s;
+}
+
+.partners-page .flex-container .resource {
+    max-height: 400px;
+}
+
+.partners-page .flex-container .resource .read-more {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.partners-page .flex-container .resource .card-more {
+    display: none;
+}
+
+.partners-page .flex-container .resource.expanded {
+    max-height: none;
 }
 
 .partners-page .flex-container .resource:hover {
@@ -1310,7 +1329,7 @@ a:hover {
     height: 100%;
     padding: 15px 0;
     display: flex;
-    align-content: center;
+    align-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
 }
